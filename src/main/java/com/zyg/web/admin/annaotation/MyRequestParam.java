@@ -1,0 +1,10 @@
+package com.zyg.web.admin.annaotation;
+
+import java.lang.annotation.*;
+
+@Target({ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface MyRequestParam {
+    String value() default "";
+}
